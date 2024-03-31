@@ -1,0 +1,15 @@
+CourseType is integer, 1 for full-time, 0 for part-time
+
+fullTimeSearch
+    i = 0
+
+    WHILE i < N
+        IF array[i].courseType = 1
+
+            print(surname, course)
+
+        ENDIF
+
+        i++
+        
+    ENDWHILE

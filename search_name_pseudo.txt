@@ -1,0 +1,14 @@
+SearchSurname
+    mid = (low + high) / 2
+    IF low > high 
+        return -1
+    ELSE
+        IF strcmp(arr[mid].surname, item) = 0
+            return mid
+        ELSE IF strcmp(arr[mid].surname, item) > 0
+            return searchSurname(arr, low, mid-1, item)
+        ELSE
+            return searchSurname(arr, mid - 1, high, item)
+        ENDIF
+    ENDIF
+EndSearchSurname
